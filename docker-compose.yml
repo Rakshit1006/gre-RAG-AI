@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - DATABASE_URL=sqlite:///./gre_mentor.db
+    volumes:
+      - ./backend:/app
+      - gre_data:/root/.gre-mentor
+    restart: unless-stopped
+
+volumes:
+  gre_data:

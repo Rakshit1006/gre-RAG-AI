@@ -1,0 +1,39 @@
+# Core API
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+pydantic-settings
+python-dotenv
+
+# Database
+sqlalchemy
+alembic
+
+# Vector Store & AI
+faiss-cpu
+numpy
+google-generativeai
+
+# PDF & Document Processing
+pdfplumber
+PyPDF2
+
+# Anki Import
+genanki
+
+# HTTP Client
+httpx
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+
+# CORS
+fastapi-cors
+
+# Utilities
+python-jose[cryptography]
+passlib[bcrypt]
